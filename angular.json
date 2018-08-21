@@ -125,6 +125,46 @@
           }
         }
       }
+    },
+    "@aurochses/angular-splash-screen": {
+      "root": "projects/aurochses/angular-splash-screen",
+      "sourceRoot": "projects/aurochses/angular-splash-screen/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/aurochses/angular-splash-screen/tsconfig.lib.json",
+            "project": "projects/aurochses/angular-splash-screen/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/aurochses/angular-splash-screen/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/aurochses/angular-splash-screen/src/test.ts",
+            "tsConfig": "projects/aurochses/angular-splash-screen/tsconfig.spec.json",
+            "karmaConfig": "projects/aurochses/angular-splash-screen/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/aurochses/angular-splash-screen/tsconfig.lib.json",
+              "projects/aurochses/angular-splash-screen/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "demo"
