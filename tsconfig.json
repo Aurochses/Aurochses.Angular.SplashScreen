@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@aurochses/angular-splash-screen": [
-        "dist/aurochses/angular-splash-screen"
+        //"dist/aurochses/angular-splash-screen"
+        "projects/aurochses/angular-splash-screen/src/public_api.ts"
       ],
       "@aurochses/angular-splash-screen/*": [
         "dist/aurochses/angular-splash-screen/*"

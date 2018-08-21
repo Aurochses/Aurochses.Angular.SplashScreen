@@ -2,7 +2,9 @@
   "name": "@aurochses/angular-splash-screen",
   "version": "0.0.1",
   "peerDependencies": {
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/animations": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/router": "^6.0.0-rc.0 || ^6.0.0"
   }
 }
